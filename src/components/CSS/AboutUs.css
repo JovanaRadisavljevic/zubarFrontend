@@ -1,0 +1,56 @@
+.aboutus-section{
+    padding: 4rem 1rem;
+    background-color: white;
+}
+.aboutus-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+}
+.about-slika img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.about-subtitle{
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+.about-text h2{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.hightlights{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.about-lista{
+    list-style: none;
+    padding: 0;
+}
+.about-lista li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.icon{
+    margin-right: 2%;
+    color: var(--primary-color);
+}
+@media(min-width:768px){
+    .aboutus-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-slika{
+        margin: 0 auto;
+    }
+    .about-text{
+        max-width: 600px;
+    }
+}
