@@ -2,6 +2,8 @@ import React from 'react'
 import HeroSekcija from '../components/HeroSekcija'
 import AboutUs from '../components/AboutUs'
 import { Traka } from '../components/Traka'
+import OurServices from '../components/OurServices'
+import WhyChooseUsSection from '../components/WhyChooseUsSection'
 
 const Pocetna = () => {
   return (
@@ -24,6 +26,10 @@ const Pocetna = () => {
           dugmeText="Learn More"
         />
         <Traka />
+        <OurServices />
+        <Traka />
+        <WhyChooseUsSection />
+
     </>
   )
 }
