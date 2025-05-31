@@ -1,0 +1,85 @@
+.how-section{
+    background-color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.how-steps{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.how-step{
+    flex: 1;
+    padding: 0 1rem;
+    min-width: 220px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.how-icon-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.how-icon-circle{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+  color: white;
+}
+.how-number{
+    position: absolute;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--secondary-color);
+    border-radius: 999px;
+    font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  z-index: 2;
+}
+.step-line{
+    content: '';
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background-color: #919191;
+     top: 36px;
+  right: -40px;
+}
+@media (max-width: 992px) {
+  .how-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-line {
+    display: none;
+  }
+
+  .how-step {
+    margin-bottom: 2rem;
+  }
+}

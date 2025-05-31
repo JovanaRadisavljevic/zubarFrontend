@@ -1,0 +1,108 @@
+.case-section {
+  background-color: var(--secondary-color);
+  padding: 4rem 1rem;
+  color: white;
+}
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+.case-subtitle {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.case-title {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+.case-title .light-text {
+  color: white;
+  font-weight: 600;
+}
+
+.case-title span:last-child {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.case-btn {
+  padding: 0.75rem 1.5rem;
+}
+.case-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.case-card {
+  position: relative;
+  background-color: #fff;
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 450px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.case-img {
+    position: absolute;
+    inset: 0; /*right:0 , left:0 , bottom:0 ,top:0*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.case-info {
+  z-index: 2;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 1.5rem;
+}
+.case-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.case-tags span {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  backdrop-filter: blur(4px);
+}
+.case-icon{
+    position: absolute;
+    z-index: 3;
+    bottom: 2rem;
+    right: 1.5rem;
+    background-color: var(--primary-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
